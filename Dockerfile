@@ -1,8 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get -y update
-RUN apt-get install git -y 
-#RUN git clone https://github.com/ChaitanyaGanesuni/spamappdocker.git
+RUN apt-get install git -y
 COPY . .
 RUN apt install sudo
 RUN sudo apt install python3 -y
